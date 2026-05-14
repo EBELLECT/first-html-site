@@ -9,8 +9,9 @@
     
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #ffffff;
+  font-family: Arial;
+  background:  #f2f2f2;;
+  font-size: 10px;
 }
 
 * {
@@ -71,11 +72,6 @@ body {
       text-decoration: underline;
     }
 
-.home-btn {
-  display: block;
-  width: 200px;
-
-  margin: 20px auto 0 auto; /* this centers it */
 
   text-align: center;
   padding: 12px 0;
@@ -89,18 +85,47 @@ body {
   width: 500px;
 }
 
-.home-btn:hover {
-  background: black;
-  color: white;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 15px;
 }
+ 
+ .button {
+background-color: black;
+color: white;            
+padding: 15px 30px;
+border: none;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+transition: 0.3s;
+text-align:"center";
+border: 3px solid black;   
+}  
+
+  .button:hover {
+            background-color: white;
+            color: black;
+        }
+
+.container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:  white;        
+}
+
   </style>
 </head>
 
 <body>
-
+  <div class="container">
   <div class="header">
     <h1>Начинающий Веб Дизайнер</h1>
-
+    
     <div class="contact">
       GitHub: EBELLECT |
       Telegram:
@@ -119,6 +144,7 @@ body {
 2) Играю в такие игры как Minecraft, Roblox и Asphalt 8. <br> 3) Люблю кушать
     </div>
   </div>
-<a class="home-btn" href="https://ebellect.github.io/first-html-site/"> Home </a>
+ <button class="button">Home</button>
+
 </body>
 </html>

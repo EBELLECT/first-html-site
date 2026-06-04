@@ -6,11 +6,18 @@
 
   <style>
     body {
-      margin: 0;
-      padding: 40px;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
+           margin: 0;
+            background-color: #f2f2f2; /* серый цвет по бокам */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:  white; /* сам сайт белый */
+        }
+    
+
 
     /* Container for all cards */
     .cards-container {
@@ -39,38 +46,96 @@
       font-size: 16px;
       color: #555;
     }
+  
+nav {
+      background-color: black;
+      padding: 15px;
+      text-align: center;
+    }
+
+nav a {
+      color: white;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+nav a:hover {
+      color: orange;
+    }
+
+
+h1 {
+text-align:center;
+color:#ff6a00;
+   }      
+
+
+img{
+width: 200px;
+height: 200px;
+border-radius: 500px;
+border-style: solid;
+border-color: #000000;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover{
+transform: scale(1.08);
+box-shadow: 0 0 20px orange;
+}
+
+
   </style>
 </head>
 
 <body>
 
+<div class="container">
+ <nav>
+    <a href="https://ebellect.github.io/first-html-site/">Главная Страница</a>
+    <a href="AboutMe.html">Про Меня</a>
+    <a href="https://romaearnmoney-del.github.io/67/">Рома</a>
+    <a href="https://timogus2001.github.io/MY-FRIENDS/">Тима</a>
+    <a href="https://robolab.com.cy/">Антон</a> 
+       
+</nav>
+     
+
+
+
+<h1> Welcome to, <br> MY FAVORITE GAMES </h1>
+
+
   <div class="cards-container">
 
     <div class="card">
-      <img src="https://placehold.co/280x180">
+   
+    <a href="https://en.wikipedia.org/wiki/Minecraft"><img src="https://i.imgur.com/nKsYRdJ.png/280x180"></a>
       <p>
-        Это карточка с картинкой, заголовком, описанием и кнопкой.
+       	Minecraft
       </p>
     </div>
 
     <div class="card">
-      <img src="https://placehold.co/280x180">
+      <a href="https://en.wikipedia.org/wiki/Roblox"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3PVRE_vleIyipQnw-7O8KiVVHHFbNTdCQA&s
+"></a>
       <p>
-        Это карточка с картинкой, заголовком, описанием и кнопкой.
+        Roblox
       </p>
     </div>
 
     <div class="card">
-      <img src="https://placehold.co/280x180">
+      <a href="https://en.wikipedia.org/wiki/Among_Us"><img src="https://static.wikia.nocookie.net/among-us-wiki/images/8/84/Among_Us.png/revision/latest/thumbnail/width/360/height/450?cb=20240408020746"></a>
       <p>
-        Это карточка с картинкой, заголовком, описанием и кнопкой.
+        Among Us
       </p>
     </div>
 
     <div class="card">
-      <img src="https://placehold.co/280x180">
+      <a href="https://en.wikipedia.org/wiki/Brawl_Stars"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-EX6bfKN7LaHPnlswAGABf_KhR_OQ400cQ&s"></a>
       <p>
-        Это карточка с картинкой, заголовком, описанием и кнопкой.
+        Brawl Stars
       </p>
     </div>
 
